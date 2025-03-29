@@ -1,15 +1,16 @@
-name: 'Hello World'
-description: 'Greet someone and record the time'
+name: 'Giphy PR commnet'
+description: 'Add the Giphy GIF commnet to new pull request'
 inputs:
-  who-to-greet:  # id of input
-    description: 'Who to greet'
+  github-token:
+    description: 'GitHub Token'
     required: true
-    default: 'World'
-outputs:
-  time: # id of output
-    description: 'The time we greeted you'
+  giphy-api-key:
+    description: 'Giphy API Key '
+    required: true
+
 runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
-    - ${{ inputs.who-to-greet }}
+    - ${{ inputs.github-tokne }}
+    - ${{ inputs.giphy-api-key }}
