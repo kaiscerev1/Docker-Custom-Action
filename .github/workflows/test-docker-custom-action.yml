@@ -14,7 +14,7 @@ jobs:
             - name: Checkout Repositoty
               uses: actions/checkout@v4
             
-            - name: Post PR comment 
+            - name: Post PR Comment 
               uses: ./
               with:
                 github-token: ${{ secrets.GITHUB_TOKEN }}
