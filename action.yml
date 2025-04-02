@@ -7,9 +7,6 @@ inputs:
   giphy-api-key:
     description: 'Giphy API Key '
     required: true
-  repository:
-    description: 'Repository name'
-    required: true
 
 runs:
   using: 'docker'
